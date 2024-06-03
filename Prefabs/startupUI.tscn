@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7stgc2ss0bqc"]
+
+[ext_resource type="Texture2D" uid="uid://cb2or5v8ehqv8" path="res://icon.png" id="1_1iryf"]
+[ext_resource type="Texture2D" uid="uid://b8nqjleid7xvh" path="res://kaplay.png" id="2_qft52"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qweqh"]
+font_size = 31
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4qo7k"]
+line_spacing = 0.64
+font_size = 20
+font_color = Color(0, 0, 0, 1)
+
+[node name="Startup" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.809727, 1, 0.998642, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014
+anchor_right = 0.014
+anchor_bottom = 0.062
+offset_left = -0.128
+offset_right = 350.872
+offset_bottom = 16.824
+text = "Homebrew Editor"
+label_settings = SubResource("LabelSettings_qweqh")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -112.0
+offset_top = -156.0
+offset_right = 111.0
+offset_bottom = 67.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_1iryf")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.0
+offset_top = -128.0
+offset_right = -1.0
+offset_bottom = -48.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("2_qft52")
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -216.0
+offset_top = -56.0
+offset_bottom = 4.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Created With Love
+By The Katteam"
+label_settings = SubResource("LabelSettings_4qo7k")
+horizontal_alignment = 2

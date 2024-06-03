@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://hmyk0yqfwodf"]
+
+[ext_resource type="PackedScene" uid="uid://p0jofyku1bsw" path="res://Prefabs/Startup.tscn" id="1_hv1h8"]
+[ext_resource type="Script" path="res://Scripts/loading_screen.gd" id="1_w7obe"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_p6d41"]
+font_size = 46
+
+[sub_resource type="LabelSettings" id="LabelSettings_acok6"]
+font_size = 161
+font_color = Color(1, 1, 1, 0.0745098)
+
+[node name="LoadingScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w7obe")
+
+[node name="Window" parent="." instance=ExtResource("1_hv1h8")]
+unresizable = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -437.0
+offset_top = -64.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Loading Homebrew"
+label_settings = SubResource("LabelSettings_p6d41")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_top = -43.0
+offset_right = 1060.0
+offset_bottom = 178.0
+text = "Main Window"
+label_settings = SubResource("LabelSettings_acok6")

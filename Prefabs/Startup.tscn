@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://p0jofyku1bsw"]
+
+[ext_resource type="PackedScene" uid="uid://b7stgc2ss0bqc" path="res://Prefabs/startupUI.tscn" id="1_33ois"]
+
+[node name="Window" type="Window"]
+initial_position = 1
+size = Vector2i(400, 500)
+borderless = true
+always_on_top = true
+mouse_passthrough = true
+
+[node name="Startup" parent="." instance=ExtResource("1_33ois")]
